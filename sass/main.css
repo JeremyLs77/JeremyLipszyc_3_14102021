@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../static/Shrikhand-Regular.otf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../static/Roboto-Regular.ttf");
+}
+
+h1,
+h2 {
+  font-family: "Shrikhand";
+}
+
+h3,
+a,
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.btnexplore {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 2rem;
+  padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.Footer {
+  background-color: #2b2e2c;
+  padding: 0.5rem 1.5rem 1rem 1rem;
+}
+
+.Footer__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer__heading {
+  color: white;
+  padding-bottom: 0.7rem;
+  font-weight: 500;
+}
+
+.Footer__Text {
+  margin: 0.4rem 0.4rem 0.4rem 0.4rem;
+}
+
+.Header-home {
+  background-color: #f0f0f0;
+}
+
+.Header-home__Title {
+  background-color: white;
+  text-align: center;
+}
+
+.Header-home__Logo {
+  width: 40%;
+}
+
+.Header-home__Heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e8e8e8;
+  border-top: #b3b3b3 solid 2px;
+}
+
+.Header-home__location {
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.Header-home__Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header-home__bolddesc {
+  font-weight: 900;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 2rem 4rem 0rem 4rem;
+}
+
+.Header-home__regdesc {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

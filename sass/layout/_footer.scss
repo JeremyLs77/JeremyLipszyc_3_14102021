@@ -1,0 +1,17 @@
+.Footer {
+    background-color: #2b2e2c;
+    padding: 0.5rem 1.5rem 1rem 1rem;
+    &__Content{
+        display:flex;
+        color: white;
+        align-items: center;
+        }
+        &__heading{
+            color: white;
+            padding-bottom: 0.7rem;
+            font-weight: 500;
+            }
+            &__Text{
+                margin : 0.4rem 0.4rem 0.4rem 0.4rem;
+            }
+}

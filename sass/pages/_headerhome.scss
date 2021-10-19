@@ -1,0 +1,36 @@
+.Header-home{
+    background-color: $color-background;
+    &__Title{
+        background-color: white;
+        text-align: center;
+    }
+        &__Logo{
+            width:40%;
+        }
+            &__Heading{
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #e8e8e8;
+                border-top: #b3b3b3 solid 2px;
+            }
+                &__location{
+                    margin-left: 1rem;
+                    font-weight: 600;
+                }
+                &__Main{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                    &__bolddesc{
+                        font-weight: 900;
+                        font-size: 1.3em;
+                        text-align:center;
+                        margin: 2rem 4rem 0rem 4rem;
+                    }
+                    &__regdesc{
+                        text-align: center;
+                    }
+}
