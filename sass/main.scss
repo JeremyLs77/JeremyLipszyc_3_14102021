@@ -1,9 +1,6 @@
 @import "./utils/variables";
 @import "./utils/fonctions";
 @import "./utils/mixins";
-@import "./utils/variables";
-@import "./utils/fonctions";
-@import "./utils/mixins";
 @import "./base/base";
 @import "./base/typography";
 @import "./components/buttons";
@@ -13,3 +10,5 @@
 @import "./layout/form";
 @import "./layout/footer";
 @import "./pages/headerhome";
+@import "./pages/function";
+@import "./pages/restaurants";
