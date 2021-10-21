@@ -5,6 +5,7 @@
         display:flex;
         color: white;
         align-items: center;
+        margin-bottom: 0.5rem;
         }
         &__heading{
             color: white;
@@ -12,6 +13,15 @@
             font-weight: 500;
             }
             &__Text{
-                margin : 0.4rem 0.4rem 0.4rem 0.4rem;
+                margin : 0rem 0rem 0rem 0rem;
             }
+}
+
+.fa-hands-helping{
+    width: 13px;
+    margin-right: 1rem;
+}
+
+.fa-utensils{
+    margin-right: 1rem;
 }

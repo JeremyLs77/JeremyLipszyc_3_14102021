@@ -31,6 +31,8 @@ a {
   border-radius: 2rem;
   padding: 0.7rem 1.3rem 0.7rem 1.3rem;
   margin-bottom: 2rem;
+  -webkit-box-shadow: 4px 3px 7px -3px rgba(0, 0, 0, 0.7);
+          box-shadow: 4px 3px 7px -3px rgba(0, 0, 0, 0.7);
 }
 
 .Footer {
@@ -46,6 +48,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .Footer__heading {
@@ -55,7 +58,16 @@ a {
 }
 
 .Footer__Text {
-  margin: 0.4rem 0.4rem 0.4rem 0.4rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.fa-hands-helping {
+  width: 13px;
+  margin-right: 1rem;
+}
+
+.fa-utensils {
+  margin-right: 1rem;
 }
 
 .Header-home {
