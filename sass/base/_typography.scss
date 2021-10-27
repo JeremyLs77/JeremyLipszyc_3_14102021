@@ -1,3 +1,5 @@
+/* Importation de la police de caractères */
+
 @font-face {
     font-family: "Shrikhand";
     src: url('../static/Shrikhand-Regular.otf');
@@ -7,6 +9,8 @@
     font-family: "Roboto";
     src: url('../static/Roboto-Regular.ttf');
 }
+
+/* Paramètres des polices de caractères */
 
 h1,
 h2{

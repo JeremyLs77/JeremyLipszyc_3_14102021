@@ -43,8 +43,37 @@ padding-bottom: 3rem;
                         }
 }
 
+/* Paramètres de la liste des restaurants*/
+
+@keyframes heart-fill {
+    0%{
+        background-position:90% 10%;
+    }
+    25%{
+        background-position: 75% 25%;
+    }
+    50%{
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
 .fa-heart{
     position:absolute;
     right: 1.3rem;
-    bottom: 1.9rem;
+    bottom: 1.7rem;
+    font-size: 1.5em;
+    cursor: pointer;
+    &:hover:before{
+        animation-name: heart-fill;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+        -webkit-background-clip: text;
+        font-weight: 900;
+        background-image: linear-gradient(white, $color-primary);
+        background-size: 200% 200%;
+        -webkit-text-fill-color: transparent;
+    }
 }

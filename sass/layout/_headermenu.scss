@@ -1,0 +1,22 @@
+/* Paramètres du header - Menus */
+
+.Header-menu{
+    &__Title{
+        background-color: white;
+        text-align: center;
+    }
+        &__Logo{
+            width:40%;
+        }
+            &__img{
+                width:96vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+}
+
+.fa-arrow-left{
+    position: absolute;
+    left: 10;
+}
