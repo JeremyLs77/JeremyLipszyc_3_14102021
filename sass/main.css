@@ -63,6 +63,92 @@ a {
   transition: opacity 350ms;
 }
 
+.btnorder {
+  background-color: #9356DC;
+  border: 0px;
+  color: white;
+  position: relative;
+  font-size: 1.05em;
+  z-index: 1;
+  border-radius: 2rem;
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  -webkit-box-shadow: 4px 3px 7px -3px rgba(0, 0, 0, 0.7);
+          box-shadow: 4px 3px 7px -3px rgba(0, 0, 0, 0.7);
+}
+
+.btnorder:hover::after {
+  opacity: 1;
+}
+
+.btnorder::after {
+  content: "";
+  position: absolute;
+  border-radius: 2rem;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(175deg, #ff79da 5%, #9757dc 66%);
+  opacity: 0;
+  z-index: -1;
+  -webkit-box-shadow: 4px 3px 12px 1px rgba(0, 0, 0, 0.49);
+          box-shadow: 4px 3px 12px 1px rgba(0, 0, 0, 0.49);
+  -webkit-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+
+.fa-heart {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.fa-heart:hover:before {
+  -webkit-animation-name: heart-fill;
+          animation-name: heart-fill;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#9356DC));
+  background-image: linear-gradient(white, #9356DC);
+  background-size: 200% 200%;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes heart-fill {
+  0% {
+    background-position: 90% 10%;
+  }
+  25% {
+    background-position: 75% 25%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes heart-fill {
+  0% {
+    background-position: 90% 10%;
+  }
+  25% {
+    background-position: 75% 25%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
 /* Paramètres du header - Menus */
 .Header-menu__Title {
   background-color: white;
@@ -75,20 +161,93 @@ a {
 
 .Header-menu__img {
   width: 96vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  z-index: 0;
+  position: relative;
 }
 
 .fa-arrow-left {
   position: absolute;
   left: 10;
+}
+
+.Menu {
+  position: relative;
+  margin-top: -3rem;
+  z-index: 10;
+  width: 96vw;
+  background-color: #f3f3f3;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.Menu__Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Menu__Restaurant {
+  margin-right: 3rem;
+}
+
+.Menu__Heading {
+  margin-left: 1rem;
+  width: 2rem;
+  font: 1em "Roboto";
+  border-bottom: lightgreen 2px solid;
+}
+
+.Menu__Course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Menu__Item {
+  background-color: white;
+  width: 88vw;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 1rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+
+.Menu__Dish {
+  padding: 1rem 0rem 0.3rem 0.5rem;
+  margin: 0;
+}
+
+.Menu__Details {
+  margin: 0;
+  padding-left: 0.5rem;
+  font-size: 0.9em;
+}
+
+.Menu__Details-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.Menu__Price {
+  margin: 0;
+  padding-right: 1rem;
+  font-weight: bold;
 }
 
 /* Paramètres du footer */
@@ -223,6 +382,7 @@ a {
   font-weight: 800;
 }
 
+/* Paramètres de la liste des restaurants*/
 .Restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,13 +426,39 @@ a {
   border-radius: 1rem 1rem 1rem 1rem;
 }
 
+.Restaurants__Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Restaurants__Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .Restaurants__Name {
-  margin: 0.3rem 0 0.3rem 0.5rem;
+  margin: 0.5rem 0rem 0.2rem 0.7rem;
   font-weight: 800;
 }
 
 .Restaurants__Location {
-  margin: 0.3rem 0 0.3rem 0.5rem;
+  margin: 0rem 0rem 0.2rem 0.7rem;
+}
+
+.Restaurants__Heart {
+  margin-right: 1rem;
 }
 
 .Restaurants__New {
@@ -283,58 +469,5 @@ a {
   background-color: #99E2D0;
   color: #305221;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-}
-
-/* Paramètres de la liste des restaurants*/
-@-webkit-keyframes heart-fill {
-  0% {
-    background-position: 90% 10%;
-  }
-  25% {
-    background-position: 75% 25%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
-}
-@keyframes heart-fill {
-  0% {
-    background-position: 90% 10%;
-  }
-  25% {
-    background-position: 75% 25%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
-}
-
-.fa-heart {
-  position: absolute;
-  right: 1.3rem;
-  bottom: 1.7rem;
-  font-size: 1.5em;
-  cursor: pointer;
-}
-
-.fa-heart:hover:before {
-  -webkit-animation-name: heart-fill;
-          animation-name: heart-fill;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-background-clip: text;
-  font-weight: 900;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#9356DC));
-  background-image: linear-gradient(white, #9356DC);
-  background-size: 200% 200%;
-  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

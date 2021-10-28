@@ -1,0 +1,53 @@
+.Menu{
+    position: relative;
+    margin-top: -3rem;
+    z-index: 10;
+    width: 96vw;
+    background-color: #f3f3f3;
+    border-radius: 2rem 2rem 0rem 0rem;
+    &__Title{
+        @include flex-center;
+        justify-content: space-around;
+    }
+        &__Restaurant{
+            margin-right: 3rem;
+        }
+            &__Heading{
+                margin-left: 1rem;
+                width: 2rem;
+                font: 1em "Roboto";
+                border-bottom: lightgreen 2px solid;
+                }
+                &__Course{
+                    @include flex-center;
+                    flex-direction: column;
+                }
+                    &__Item{
+                        background-color: white;
+                        width: 88vw;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                        margin-bottom: 1rem;
+                        border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+                    }
+                        &__Dish{
+                        padding: 1rem 0rem 0.3rem 0.5rem;
+                        margin: 0;
+                        }
+                            &__Details{
+                            margin: 0;
+                            padding-left: 0.5rem;
+                            font-size: 0.9em;
+                            }
+                                &__Details-wrapper{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding-bottom: 1rem;
+                                }
+                                    &__Price{
+                                        margin:0;
+                                        padding-right: 1rem;
+                                        font-weight: bold;
+                                    }
+
+}
+

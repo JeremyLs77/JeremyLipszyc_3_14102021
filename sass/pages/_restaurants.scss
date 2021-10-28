@@ -1,3 +1,5 @@
+/* Paramètres de la liste des restaurants*/
+
 .Restaurants{
 @include flex-center;
 flex-direction: column;
@@ -25,55 +27,37 @@ padding-bottom: 3rem;
                 object-fit: cover;
                 border-radius: 1rem 1rem 1rem 1rem;
             }
-                &__Name{
-                    margin: 0.3rem 0 0.3rem 0.5rem;
-                    font-weight: 800;
+                &__Info{
+                    display:flex;
+                    justify-content: space-between;
+                    align-items: center;
                 }
-                    &__Location{
-                        margin: 0.3rem 0 0.3rem 0.5rem;
+                    &__Text{
+                        display:flex;
+                        flex-direction: column;
                     }
-                        &__New{
-                            position:absolute;
-                            top: 0.1rem;
-                            right: 1rem;
-                            font-size: 0.8em;
-                            background-color: $color-tertiary;
-                            color: #305221;
-                            padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+                        &__Name{
+                            margin: 0.5rem 0rem 0.2rem 0.7rem;
+                            font-weight: 800;
                         }
-}
+                            &__Location{
+                                margin: 0rem 0rem 0.2rem 0.7rem;
+                            }   
+                                &__Heart{
+                                    margin-right: 1rem;
+                                }
+                                    &__New{
+                                        position:absolute;
+                                        top: 0.1rem;
+                                        right: 1rem;
+                                        font-size: 0.8em;
+                                        background-color: $color-tertiary;
+                                        color: #305221;
+                                        padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+                                    }
+    }
 
-/* Paramètres de la liste des restaurants*/
 
-@keyframes heart-fill {
-    0%{
-        background-position:90% 10%;
-    }
-    25%{
-        background-position: 75% 25%;
-    }
-    50%{
-        background-position: 50% 50%;
-    }
-    100% {
-        background-position: 0% 100%;
-    }
-}
 
-.fa-heart{
-    position:absolute;
-    right: 1.3rem;
-    bottom: 1.7rem;
-    font-size: 1.5em;
-    cursor: pointer;
-    &:hover:before{
-        animation-name: heart-fill;
-        animation-duration: 1000ms;
-        animation-fill-mode: forwards;
-        -webkit-background-clip: text;
-        font-weight: 900;
-        background-image: linear-gradient(white, $color-primary);
-        background-size: 200% 200%;
-        -webkit-text-fill-color: transparent;
-    }
-}
+
+
