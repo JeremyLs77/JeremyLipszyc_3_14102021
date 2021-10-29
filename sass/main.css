@@ -470,4 +470,103 @@ a {
   color: #305221;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
 }
+
+/* Paramètres du loading spinner*/
+.Spinner {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -25px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 14px;
+  z-index: 100;
+}
+
+.Spinner div {
+  position: absolute;
+  border: 5px solid #9356DC;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: Spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite forwards;
+          animation: Spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite forwards;
+}
+
+.Spinner div:nth-child(2) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+@-webkit-keyframes Spinner {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes Spinner {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Fond blanc du loading spinner*/
+.Loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #ffff;
+  z-index: 99;
+  -webkit-animation: Loading 0s ease-in 3s;
+          animation: Loading 0s ease-in 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes Loading {
+  to {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes Loading {
+  to {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+}
 /*# sourceMappingURL=main.css.map */
