@@ -161,6 +161,9 @@ a {
 
 .Header-menu__img {
   width: 96vw;
+  max-height: 17rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 0;
   position: relative;
 }

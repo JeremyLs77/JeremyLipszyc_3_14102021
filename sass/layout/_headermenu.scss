@@ -10,6 +10,8 @@
         }
             &__img{
                 width:96vw;
+                max-height: 17rem;
+                object-fit: cover;
                 z-index: 0;
                 position: relative;
             }
