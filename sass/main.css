@@ -242,8 +242,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
-  -webkit-animation: fadeIn 1200ms;
-          animation: fadeIn 1200ms;
+  -webkit-animation: fadeIn 1300ms;
+          animation: fadeIn 1300ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 0.5s;
@@ -256,8 +256,8 @@ a {
   font: 1em "Roboto";
   border-bottom: lightgreen 2px solid;
   opacity: 0;
-  -webkit-animation: fadeIn 1200ms;
-          animation: fadeIn 1200ms;
+  -webkit-animation: fadeIn 1300ms;
+          animation: fadeIn 1300ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 1.5s;
@@ -276,8 +276,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
-  -webkit-animation: fadeIn 1200ms;
-          animation: fadeIn 1200ms;
+  -webkit-animation: fadeIn 1300ms;
+          animation: fadeIn 1300ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2s;
@@ -290,8 +290,8 @@ a {
   font: 1em "Roboto";
   border-bottom: lightgreen 2px solid;
   opacity: 0;
-  -webkit-animation: fadeIn 1200ms;
-          animation: fadeIn 1200ms;
+  -webkit-animation: fadeIn 1300ms;
+          animation: fadeIn 1300ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2.5s;
@@ -310,8 +310,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
-  -webkit-animation: fadeIn 1200ms;
-          animation: fadeIn 1200ms;
+  -webkit-animation: fadeIn 1300ms;
+          animation: fadeIn 1300ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 3s;
