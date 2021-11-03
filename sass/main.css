@@ -173,6 +173,7 @@ a {
   left: 10;
 }
 
+/* Paramètres des Menus */
 .Menu {
   position: relative;
   margin-top: -3rem;
@@ -204,6 +205,18 @@ a {
   border-bottom: lightgreen 2px solid;
 }
 
+.Menu__Heading-Appet {
+  margin-left: 1rem;
+  width: 2rem;
+  font: 1em "Roboto";
+  border-bottom: lightgreen 2px solid;
+  opacity: 0;
+  -webkit-animation: fadeIn 1.5s;
+          animation: fadeIn 1.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .Menu__Course {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,6 +230,94 @@ a {
           flex-direction: column;
 }
 
+.Menu__Course-Appet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-animation: fadeIn 1200ms;
+          animation: fadeIn 1200ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.Menu__Heading-Main {
+  margin-left: 1rem;
+  width: 2rem;
+  font: 1em "Roboto";
+  border-bottom: lightgreen 2px solid;
+  opacity: 0;
+  -webkit-animation: fadeIn 1200ms;
+          animation: fadeIn 1200ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.Menu__Course-Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-animation: fadeIn 1200ms;
+          animation: fadeIn 1200ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.Menu__Heading-Dessert {
+  margin-left: 1rem;
+  width: 2rem;
+  font: 1em "Roboto";
+  border-bottom: lightgreen 2px solid;
+  opacity: 0;
+  -webkit-animation: fadeIn 1200ms;
+          animation: fadeIn 1200ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.Menu__Course-Dessert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-animation: fadeIn 1200ms;
+          animation: fadeIn 1200ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
 .Menu__Item {
   background-color: white;
   width: 88vw;
@@ -227,6 +328,7 @@ a {
 }
 
 .Menu__Dish {
+  position: relative;
   padding: 1rem 0rem 0.3rem 0.5rem;
   margin: 0;
 }
@@ -251,6 +353,24 @@ a {
   margin: 0;
   padding-right: 1rem;
   font-weight: bold;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Paramètres du footer */

@@ -1,3 +1,5 @@
+/* Paramètres des Menus */
+
 .Menu{
     position: relative;
     margin-top: -3rem;
@@ -18,36 +20,85 @@
                 font: 1em "Roboto";
                 border-bottom: lightgreen 2px solid;
                 }
-                &__Course{
-                    @include flex-center;
-                    flex-direction: column;
+                &__Heading-Appet{
+                    @include heading-menu;
+                    opacity:0;
+                    animation: fadeIn 1.5s;
+                    animation-fill-mode: forwards;
                 }
-                    &__Item{
-                        background-color: white;
-                        width: 88vw;
-                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                        margin-bottom: 1rem;
-                        border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+                    &__Course{
+                        @include flex-center;
+                        flex-direction: column;
                     }
-                        &__Dish{
-                        padding: 1rem 0rem 0.3rem 0.5rem;
-                        margin: 0;
+                        &__Course-Appet{
+                            @include flex-center;
+                            flex-direction: column;
+                            opacity: 0;
+                            animation: fadeIn 1200ms;
+                            animation-fill-mode: forwards;
+                            animation-delay: 0.5s;
                         }
-                            &__Details{
-                            margin: 0;
-                            padding-left: 0.5rem;
-                            font-size: 0.9em;
+                            &__Heading-Main{
+                                @include heading-menu;
+                                opacity:0;
+                                animation: fadeIn 1200ms;
+                                animation-fill-mode: forwards;
+                                animation-delay: 1.5s;
                             }
-                                &__Details-wrapper{
-                                    display: flex;
-                                    justify-content: space-between;
-                                    padding-bottom: 1rem;
+                                &__Course-Main{
+                                    @include flex-center;
+                                    flex-direction: column;
+                                    opacity: 0;
+                                    animation: fadeIn 1200ms;
+                                    animation-fill-mode: forwards;  
+                                    animation-delay: 2s;
                                 }
-                                    &__Price{
-                                        margin:0;
-                                        padding-right: 1rem;
-                                        font-weight: bold;
+                                    &__Heading-Dessert{
+                                        @include heading-menu;
+                                        opacity:0;
+                                        animation: fadeIn 1200ms;
+                                        animation-fill-mode: forwards;
+                                        animation-delay: 2.5s;
                                     }
+                                        &__Course-Dessert{
+                                            @include flex-center;
+                                            flex-direction: column;
+                                            opacity: 0;
+                                            animation: fadeIn 1200ms;
+                                            animation-fill-mode: forwards;  
+                                            animation-delay: 3s;
+                                        }
+                                            &__Item{
+                                                background-color: white;
+                                                width: 88vw;
+                                                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                                                margin-bottom: 1rem;
+                                                border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+                                            }                   
+                                                        &__Dish{
+                                                        position:relative;
+                                                        padding: 1rem 0rem 0.3rem 0.5rem;
+                                                        margin: 0;
+                                                        }
+                                                            &__Details{
+                                                                margin: 0;
+                                                                padding-left: 0.5rem;
+                                                                font-size: 0.9em;
+                                                                }
+                                                                    &__Details-wrapper{
+                                                                        display: flex;
+                                                                        justify-content: space-between;
+                                                                        padding-bottom: 1rem;
+                                                                    }
+                                                                        &__Price{
+                                                                            margin:0;
+                                                                            padding-right: 1rem;
+                                                                            font-weight: bold;
+                                                                        }
 
 }
 
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
