@@ -23,7 +23,7 @@
                 &__Heading-Appet{
                     @include heading-menu;
                     opacity:0;
-                    animation: fadeIn 1.5s;
+                    animation: fadeIn 0.5s;
                     animation-fill-mode: forwards;
                 }
                     &__Course{
@@ -34,68 +34,102 @@
                             @include flex-center;
                             flex-direction: column;
                             opacity: 0;
-                            animation: fadeIn 1300ms;
+                            animation: fadeIn 700ms;
                             animation-fill-mode: forwards;
                             animation-delay: 0.5s;
                         }
                             &__Heading-Main{
                                 @include heading-menu;
                                 opacity:0;
-                                animation: fadeIn 1300ms;
+                                animation: fadeIn 600ms;
                                 animation-fill-mode: forwards;
-                                animation-delay: 1.5s;
+                                animation-delay: 1s;
                             }
                                 &__Course-Main{
                                     @include flex-center;
                                     flex-direction: column;
                                     opacity: 0;
-                                    animation: fadeIn 1300ms;
+                                    animation: fadeIn 600ms;
                                     animation-fill-mode: forwards;  
-                                    animation-delay: 2s;
+                                    animation-delay: 1.5s;
                                 }
                                     &__Heading-Dessert{
                                         @include heading-menu;
                                         opacity:0;
-                                        animation: fadeIn 1300ms;
+                                        animation: fadeIn 600ms;
                                         animation-fill-mode: forwards;
-                                        animation-delay: 2.5s;
+                                        animation-delay: 2s;
                                     }
                                         &__Course-Dessert{
                                             @include flex-center;
                                             flex-direction: column;
                                             opacity: 0;
-                                            animation: fadeIn 1300ms;
+                                            animation: fadeIn 600ms;
                                             animation-fill-mode: forwards;  
-                                            animation-delay: 3s;
+                                            animation-delay: 2.5s;
                                         }
-                                            &__Item{
-                                                background-color: white;
-                                                width: 88vw;
-                                                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                                                margin-bottom: 1rem;
-                                                border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
-                                            }                   
-                                                        &__Dish{
-                                                        position:relative;
-                                                        padding: 1rem 0rem 0.3rem 0.5rem;
-                                                        margin: 0;
-                                                        }
-                                                            &__Details{
-                                                                margin: 0;
-                                                                padding-left: 0.5rem;
-                                                                font-size: 0.9em;
-                                                                }
-                                                                    &__Details-wrapper{
-                                                                        display: flex;
-                                                                        justify-content: space-between;
-                                                                        padding-bottom: 1rem;
-                                                                    }
-                                                                        &__Price{
-                                                                            margin:0;
-                                                                            padding-right: 1rem;
-                                                                            font-weight: bold;
-                                                                        }
 
+}
+
+.MenuItem{
+display:flex;
+background-color: white;
+width: 83vw;
+padding: 1rem;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+margin-bottom: 1rem;
+border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+overflow: hidden;
+    &__Details{
+        margin:0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+        &__Details-wrapper{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            flex:1;
+        }
+            &__Price{
+                font-family: "Roboto";
+                display:flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding-right: 2rem;
+                font-weight: 800;
+            }
+            &__Checkbutton{
+                @include flex-center;
+                justify-content: center;
+                margin: -1rem -5rem -1rem -1rem;
+                background-color: $color-tertiary;
+                width: 4rem;
+                transition-duration: .6s;
+                }
+                    &:hover &__Checkbutton{
+                        margin-right:-1rem;
+                    }
+                        &__Checkwrapper{
+                            @include flex-center;
+                            justify-content: center;
+                            height: 1.6rem;
+                            width: 1.6rem;
+                            background-color: white;
+                            border-radius: 100px;
+                            transform: rotate(180deg);
+                            transition-duration: .7s;
+                            } 
+                                &:hover &__Checkwrapper{
+                                    transform: rotate(0);
+                                }
+                                    &__Check-icon{
+                                        color: $color-tertiary;
+                                    }               
+                                        &__Dish{
+                                            margin:0
+                                        }
 }
 
 @keyframes fadeIn {

@@ -211,8 +211,8 @@ a {
   font: 1em "Roboto";
   border-bottom: lightgreen 2px solid;
   opacity: 0;
-  -webkit-animation: fadeIn 1.5s;
-          animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -242,8 +242,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
-  -webkit-animation: fadeIn 1300ms;
-          animation: fadeIn 1300ms;
+  -webkit-animation: fadeIn 700ms;
+          animation: fadeIn 700ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 0.5s;
@@ -256,12 +256,12 @@ a {
   font: 1em "Roboto";
   border-bottom: lightgreen 2px solid;
   opacity: 0;
-  -webkit-animation: fadeIn 1300ms;
-          animation: fadeIn 1300ms;
+  -webkit-animation: fadeIn 600ms;
+          animation: fadeIn 600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .Menu__Course-Main {
@@ -276,12 +276,12 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
-  -webkit-animation: fadeIn 1300ms;
-          animation: fadeIn 1300ms;
+  -webkit-animation: fadeIn 600ms;
+          animation: fadeIn 600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .Menu__Heading-Dessert {
@@ -290,12 +290,12 @@ a {
   font: 1em "Roboto";
   border-bottom: lightgreen 2px solid;
   opacity: 0;
-  -webkit-animation: fadeIn 1300ms;
-          animation: fadeIn 1300ms;
+  -webkit-animation: fadeIn 600ms;
+          animation: fadeIn 600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .Menu__Course-Dessert {
@@ -310,49 +310,111 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   opacity: 0;
-  -webkit-animation: fadeIn 1300ms;
-          animation: fadeIn 1300ms;
+  -webkit-animation: fadeIn 600ms;
+          animation: fadeIn 600ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
-.Menu__Item {
+.MenuItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: white;
-  width: 88vw;
+  width: 83vw;
+  padding: 1rem;
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-bottom: 1rem;
   border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+  overflow: hidden;
 }
 
-.Menu__Dish {
-  position: relative;
-  padding: 1rem 0rem 0.3rem 0.5rem;
+.MenuItem__Details {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
-.Menu__Details {
-  margin: 0;
-  padding-left: 0.5rem;
-  font-size: 0.9em;
+.MenuItem__Details-wrapper {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.Menu__Details-wrapper {
+.MenuItem__Price {
+  font-family: "Roboto";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 1rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 2rem;
+  font-weight: 800;
 }
 
-.Menu__Price {
+.MenuItem__Checkbutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -1rem -5rem -1rem -1rem;
+  background-color: #99E2D0;
+  width: 4rem;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+}
+
+.MenuItem:hover .MenuItem__Checkbutton {
+  margin-right: -1rem;
+}
+
+.MenuItem__Checkwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  border-radius: 100px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: .7s;
+          transition-duration: .7s;
+}
+
+.MenuItem:hover .MenuItem__Checkwrapper {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.MenuItem__Check-icon {
+  color: #99E2D0;
+}
+
+.MenuItem__Dish {
   margin: 0;
-  padding-right: 1rem;
-  font-weight: bold;
 }
 
 @-webkit-keyframes fadeIn {
