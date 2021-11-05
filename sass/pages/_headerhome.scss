@@ -8,6 +8,8 @@
     }
         &__Logo{
             width:40%;
+            @media screen and (min-width: 1250px){
+                width: 25%;}
         }
             &__Heading{
                 @include flex-center;

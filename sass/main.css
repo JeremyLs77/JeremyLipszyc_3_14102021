@@ -111,12 +111,15 @@ a {
           animation-duration: 1000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  background-clip: text;
+  -moz-background-clip: text;
   -webkit-background-clip: text;
   font-weight: 900;
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#9356DC));
   background-image: linear-gradient(white, #9356DC);
   background-size: 200% 200%;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 @-webkit-keyframes heart-fill {
@@ -485,6 +488,12 @@ a {
   width: 40%;
 }
 
+@media screen and (min-width: 1250px) {
+  .Header-home__Logo {
+    width: 25%;
+  }
+}
+
 .Header-home__Heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,6 +540,16 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 1250px) {
+  .Function {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .Function__Infoframe {
   background-color: #f0f0f0;
   display: -webkit-box;
@@ -548,6 +567,13 @@ a {
   -webkit-box-shadow: 4px 11px 8px -4px rgba(0, 0, 0, 0.24);
           box-shadow: 4px 11px 8px -4px rgba(0, 0, 0, 0.24);
   margin-bottom: 1.8rem;
+}
+
+@media screen and (min-width: 1250px) {
+  .Function__Infoframe {
+    width: 20rem;
+    margin-top: 2rem;
+  }
 }
 
 .Function__Number {
@@ -583,12 +609,36 @@ a {
   padding-bottom: 3rem;
 }
 
+@media screen and (min-width: 1250px) {
+  .Restaurants {
+    padding-top: 5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .Restaurants__Title {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-weight: 800;
   margin-top: 2.5rem;
   margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 1250px) {
+  .Restaurants__Title {
+    position: absolute;
+    left: 7%;
+    top: 49%;
+    font-size: 1.3em;
+  }
 }
 
 .Restaurants__Wrapper {
@@ -601,6 +651,12 @@ a {
   background-color: white;
   border-radius: 1rem 1rem 1rem 1rem;
   position: relative;
+}
+
+@media screen and (min-width: 1250px) {
+  .Restaurants__Wrapper {
+    max-width: 35rem;
+  }
 }
 
 .Restaurants__Image {
@@ -699,7 +755,6 @@ a {
     width: 72px;
     height: 72px;
     opacity: 0;
-    visibility: hidden;
   }
 }
 
@@ -717,7 +772,6 @@ a {
     width: 72px;
     height: 72px;
     opacity: 0;
-    visibility: hidden;
   }
 }
 

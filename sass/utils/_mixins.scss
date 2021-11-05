@@ -9,3 +9,10 @@
     font: 1em "Roboto";
     border-bottom: lightgreen 2px solid;
 }
+
+@mixin desktop-only {
+    @media screen and (min-width: 1250px){
+        display:flex;
+        justify-content: space-around;
+    }
+}

@@ -1,4 +1,5 @@
 .Function{
+    @include desktop-only;
         &__Infoframe{
         background-color: $color-background;
         @include flex-center;
@@ -8,7 +9,11 @@
         padding: 0.7rem 0.7rem 0.7rem 0.7rem;
         box-shadow: 4px 11px 8px -4px rgba(0,0,0,0.24);
         margin-bottom: 1.8rem;
+        @media screen and (min-width: 1250px){
+            width: 20rem;
+            margin-top: 2rem;
         }
+            }
             &__Number{
                 background-color: $color-primary;
                 position: absolute;

@@ -71,11 +71,14 @@
         animation-name: heart-fill;
         animation-duration: 1000ms;
         animation-fill-mode: forwards;
-        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-background-clip: text; 
         font-weight: 900;
         background-image: linear-gradient(white, $color-primary);
         background-size: 200% 200%;
         -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
     }
 }
 
