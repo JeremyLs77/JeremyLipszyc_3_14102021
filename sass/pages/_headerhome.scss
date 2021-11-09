@@ -5,11 +5,15 @@
     &__Title{
         background-color: white;
         text-align: center;
+        padding-top: 1rem;
     }
         &__Logo{
-            width:40%;
+            width:50%;
+            margin-bottom:1rem;
             @media screen and (min-width: 1250px){
-                width: 25%;}
+                width: 16%;}
+                @media screen and (max-width: 1024px){
+                    width: 25%;}
         }
             &__Heading{
                 @include flex-center;

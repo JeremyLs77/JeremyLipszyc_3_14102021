@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  margin: 0;
+}
+
 /* Importation de la police de caractères */
 @font-face {
   font-family: "Shrikhand";
@@ -159,12 +163,20 @@ a {
 }
 
 .Header-menu__Logo {
-  width: 40%;
+  font-family: Shrikhand;
+  text-align: center;
+  font-size: 2em;
+}
+
+@media screen and (min-width: 1250px) {
+  .Header-menu__Logo {
+    width: 15%;
+  }
 }
 
 .Header-menu__img {
-  width: 96vw;
   max-height: 17rem;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 0;
@@ -173,7 +185,20 @@ a {
 
 .fa-arrow-left {
   position: absolute;
-  left: 10;
+  height: 2rem;
+  width: 2rem;
+  left: 1.8rem;
+  top: 4.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2em;
 }
 
 /* Paramètres des Menus */
@@ -181,7 +206,6 @@ a {
   position: relative;
   margin-top: -3rem;
   z-index: 10;
-  width: 96vw;
   background-color: #f3f3f3;
   border-radius: 2rem 2rem 0rem 0rem;
 }
@@ -455,10 +479,22 @@ a {
   margin-bottom: 0.5rem;
 }
 
+@media screen and (min-width: 750px) {
+  .Footer__Content {
+    margin-left: 6%;
+  }
+}
+
 .Footer__heading {
   color: white;
   padding-bottom: 0.7rem;
   font-weight: 500;
+}
+
+@media screen and (min-width: 750px) {
+  .Footer__heading {
+    margin-left: 6%;
+  }
 }
 
 .Footer__Text {
@@ -482,13 +518,21 @@ a {
 .Header-home__Title {
   background-color: white;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .Header-home__Logo {
-  width: 40%;
+  width: 50%;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1250px) {
+  .Header-home__Logo {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .Header-home__Logo {
     width: 25%;
   }
@@ -540,14 +584,22 @@ a {
   text-align: center;
 }
 
+.Function__Display {
+  margin: 0px 0.7rem 0px 0.7rem;
+}
+
 @media screen and (min-width: 1250px) {
-  .Function {
+  .Function__Display {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+}
+
+.Function__Title {
+  margin: 2rem 0rem 1rem 6%;
 }
 
 .Function__Infoframe {
@@ -571,7 +623,7 @@ a {
 
 @media screen and (min-width: 1250px) {
   .Function__Infoframe {
-    width: 20rem;
+    width: 20%;
     margin-top: 2rem;
   }
 }
@@ -595,6 +647,10 @@ a {
 
 /* Paramètres de la liste des restaurants*/
 .Restaurants {
+  background-color: #f0f0f0;
+}
+
+.Restaurants__Display {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,8 +666,7 @@ a {
 }
 
 @media screen and (min-width: 1250px) {
-  .Restaurants {
-    padding-top: 5rem;
+  .Restaurants__Display {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -625,18 +680,13 @@ a {
 }
 
 .Restaurants__Title {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   font-weight: 800;
-  margin-top: 2.5rem;
-  margin-left: 1.5rem;
+  margin: 2rem 0rem 2rem 6%;
+  padding-top: 2rem;
 }
 
 @media screen and (min-width: 1250px) {
   .Restaurants__Title {
-    position: absolute;
-    left: 7%;
-    top: 49%;
     font-size: 1.3em;
   }
 }
@@ -656,6 +706,12 @@ a {
 @media screen and (min-width: 1250px) {
   .Restaurants__Wrapper {
     max-width: 40rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .Restaurants__Wrapper {
+    max-width: 50rem;
   }
 }
 

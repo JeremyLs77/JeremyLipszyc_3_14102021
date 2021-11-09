@@ -1,74 +1,74 @@
 /* Paramètres de la liste des restaurants*/
 
-.Restaurants{
-@include flex-center;
-flex-direction: column;
-background-color: $color-background;
-padding-bottom: 3rem;
-@media screen and (min-width: 1250px){
-    padding-top: 5rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;}
-    &__Title{
-        align-self:flex-start;
-        font-weight: 800;
-        margin-top: 2.5rem;
-        margin-left: 1.5rem;
+.Restaurants{  
+    background-color: $color-background;
+        &__Display{
+        @include flex-center;
+        flex-direction: column;
+        background-color: $color-background;
+        padding-bottom: 3rem;
         @media screen and (min-width: 1250px){
-            position:absolute;
-            left: 7%;
-            top: 49%;
-            font-size: 1.3em;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;}
         }
-    }
-        &__Wrapper{
-        width: 85vw;
-        height:auto;
-        margin-bottom: 1rem;
-        padding-bottom: 0.5rem;
-        box-shadow: 4px 11px 8px -4px rgba(0,0,0,0.24);
-        background-color: white;
-        border-radius: 1rem 1rem 1rem 1rem;
-        position: relative;
-        @media screen and (min-width: 1250px){
-            max-width: 40rem;}
-        }    
-            &__Image{
-                width:100%;
-                max-height: 12rem;
-                object-fit: cover;
-                border-radius: 1rem 1rem 1rem 1rem;   
-            }
-                &__Info{
-                    display:flex;
-                    justify-content: space-between;
-                    align-items: center;
+            &__Title{
+                font-weight: 800;
+                margin: 2rem 0rem 2rem 6%;
+                padding-top: 2rem;
+                @media screen and (min-width: 1250px){
+                    font-size: 1.3em;
                 }
-                    &__Text{
-                        display:flex;
-                        flex-direction: column;
+            }
+                &__Wrapper{
+                width: 85vw;
+                height:auto;
+                margin-bottom: 1rem;
+                padding-bottom: 0.5rem;
+                box-shadow: 4px 11px 8px -4px rgba(0,0,0,0.24);
+                background-color: white;
+                border-radius: 1rem 1rem 1rem 1rem;
+                position: relative;
+                @media screen and (min-width: 1250px){
+                    max-width: 40rem;}
+                    @media screen and (min-width: 2000px){
+                        max-width: 50rem;}
+                }    
+                    &__Image{
+                        width:100%;
+                        max-height: 12rem;
+                        object-fit: cover;
+                        border-radius: 1rem 1rem 1rem 1rem;   
                     }
-                        &__Name{
-                            margin: 0.5rem 0rem 0.2rem 0.7rem;
-                            font-weight: 800;
+                        &__Info{
+                            display:flex;
+                            justify-content: space-between;
+                            align-items: center;
                         }
-                            &__Location{
-                                margin: 0rem 0rem 0.2rem 0.7rem;
-                            }   
-                                &__Heart{
-                                    margin-right: 1rem;
+                            &__Text{
+                                display:flex;
+                                flex-direction: column;
+                            }
+                                &__Name{
+                                    margin: 0.5rem 0rem 0.2rem 0.7rem;
+                                    font-weight: 800;
                                 }
-                                    &__New{
-                                        position:absolute;
-                                        top: 0.1rem;
-                                        right: 1rem;
-                                        font-size: 0.8em;
-                                        background-color: $color-tertiary;
-                                        color: #305221;
-                                        padding: 0.3rem 0.6rem 0.3rem 0.6rem;
-                                    }
-    }
+                                    &__Location{
+                                        margin: 0rem 0rem 0.2rem 0.7rem;
+                                    }   
+                                        &__Heart{
+                                            margin-right: 1rem;
+                                        }
+                                            &__New{
+                                                position:absolute;
+                                                top: 0.1rem;
+                                                right: 1rem;
+                                                font-size: 0.8em;
+                                                background-color: $color-tertiary;
+                                                color: #305221;
+                                                padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+                                            }
+}
 
 
 

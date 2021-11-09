@@ -3,20 +3,26 @@
 .Footer {
     background-color: #2b2e2c;
     padding: 0.5rem 1.5rem 1rem 1rem;
-    &__Content{
-        display:flex;
-        color: white;
-        align-items: center;
-        margin-bottom: 0.5rem;
-        }
-        &__heading{
+        &__Content{
+            display:flex;
             color: white;
-            padding-bottom: 0.7rem;
-            font-weight: 500;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            @media screen and (min-width: 750px){
+                margin-left: 6%;
+                }
             }
-            &__Text{
-                margin : 0rem 0rem 0rem 0rem;
-            }
+            &__heading{
+                color: white;
+                padding-bottom: 0.7rem;
+                font-weight: 500;
+                @media screen and (min-width: 750px){
+                    margin-left: 6%;
+                    }
+                }
+                    &__Text{
+                        margin : 0rem 0rem 0rem 0rem;
+                    }
 }
 
 .fa-hands-helping{
