@@ -8,12 +8,12 @@
         padding-top: 1rem;
     }
         &__Logo{
-            width:50%;
+            width:25%;
             margin-bottom:1rem;
             @media screen and (min-width: 1250px){
                 width: 16%;}
-                @media screen and (max-width: 1024px){
-                    width: 25%;}
+                @media screen and (max-width: 750px){
+                    width: 50%;}
         }
             &__Heading{
                 @include flex-center;

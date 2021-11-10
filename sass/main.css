@@ -34,7 +34,8 @@ a {
 
 /* Paramètres des boutons */
 .btnexplore {
-  background-color: #9356DC;
+  background-color: #686868;
+  background: linear-gradient(175deg, #ff79da 5%, #9757dc 66%);
   border: 0px;
   color: white;
   position: relative;
@@ -58,7 +59,8 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(175deg, #ff79da 5%, #9757dc 66%);
+  background: #eb71c9;
+  background: linear-gradient(175deg, #eb71c9 27%, rgba(172, 87, 220, 0.916404) 85%);
   opacity: 0;
   z-index: -1;
   -webkit-box-shadow: 4px 3px 12px 1px rgba(0, 0, 0, 0.49);
@@ -68,7 +70,8 @@ a {
 }
 
 .btnorder {
-  background-color: #9356DC;
+  background-color: #686868;
+  background: linear-gradient(175deg, #ff79da 5%, #9757dc 66%);
   border: 0px;
   color: white;
   position: relative;
@@ -94,7 +97,8 @@ a {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(175deg, #ff79da 5%, #9757dc 66%);
+  background: #eb71c9;
+  background: linear-gradient(175deg, #eb71c9 27%, rgba(172, 87, 220, 0.916404) 85%);
   opacity: 0;
   z-index: -1;
   -webkit-box-shadow: 4px 3px 12px 1px rgba(0, 0, 0, 0.49);
@@ -106,6 +110,12 @@ a {
 .fa-heart {
   font-size: 1.5em;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1250px) {
+  .fa-heart {
+    margin-right: 3rem;
+  }
 }
 
 .fa-heart:hover:before {
@@ -160,18 +170,13 @@ a {
 .Header-menu__Title {
   background-color: white;
   text-align: center;
+  position: relative;
 }
 
 .Header-menu__Logo {
   font-family: Shrikhand;
   text-align: center;
   font-size: 2em;
-}
-
-@media screen and (min-width: 1250px) {
-  .Header-menu__Logo {
-    width: 15%;
-  }
 }
 
 .Header-menu__img {
@@ -187,8 +192,8 @@ a {
   position: absolute;
   height: 2rem;
   width: 2rem;
-  left: 1.8rem;
-  top: 4.5%;
+  left: 2rem;
+  top: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,6 +204,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.2em;
+  -webkit-transform: translateY(-33%);
+          transform: translateY(-33%);
 }
 
 /* Paramètres des Menus */
@@ -208,6 +215,14 @@ a {
   z-index: 10;
   background-color: #f3f3f3;
   border-radius: 2rem 2rem 0rem 0rem;
+}
+
+@media screen and (min-width: 1250px) {
+  .Menu {
+    width: 66%;
+    margin: auto;
+    margin-top: -3rem;
+  }
 }
 
 .Menu__Title {
@@ -221,8 +236,22 @@ a {
       justify-content: space-around;
 }
 
+@media screen and (min-width: 1250px) {
+  .Menu__Title {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .Menu__Restaurant {
   margin-right: 3rem;
+}
+
+@media screen and (min-width: 1250px) {
+  .Menu__Restaurant {
+    margin-left: 2rem;
+  }
 }
 
 .Menu__Heading {
@@ -357,6 +386,12 @@ a {
   margin-bottom: 1rem;
   border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1250px) {
+  .MenuItem {
+    width: 75%;
+  }
 }
 
 .MenuItem__Details {
@@ -522,7 +557,7 @@ a {
 }
 
 .Header-home__Logo {
-  width: 50%;
+  width: 25%;
   margin-bottom: 1rem;
 }
 
@@ -532,9 +567,9 @@ a {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 750px) {
   .Header-home__Logo {
-    width: 25%;
+    width: 50%;
   }
 }
 
@@ -764,7 +799,7 @@ a {
   right: 1rem;
   font-size: 0.8em;
   background-color: #99E2D0;
-  color: #305221;
+  color: #1b6140;
   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
 }
 

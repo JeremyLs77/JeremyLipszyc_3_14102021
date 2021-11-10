@@ -1,7 +1,8 @@
 /* Paramètres des boutons */
 
 .btnexplore{
-    background-color: $color-primary;
+    background-color: rgb(104, 104, 104);
+    background: linear-gradient(175deg, rgba(255,121,218,1) 5%, rgba(151,87,220,1) 66%);
     border: 0px;
     color: white;
     position: relative;
@@ -23,7 +24,8 @@
         right:0;
         bottom:0;
         left: 0;
-        background: linear-gradient(175deg, rgba(255,121,218,1) 5%, rgba(151,87,220,1) 66%);
+        background: rgb(235,113,201);
+        background: linear-gradient(175deg, rgba(235,113,201,1) 27%, rgba(172,87,220,0.9164040616246498) 85%);
         opacity: 0;
         z-index: -1;
         box-shadow: 4px 3px 12px 1px rgba(0,0,0,0.49);
@@ -32,7 +34,8 @@
 }
 
 .btnorder{
-    background-color: $color-primary;
+    background-color: rgb(104, 104, 104);
+    background: linear-gradient(175deg, rgba(255,121,218,1) 5%, rgba(151,87,220,1) 66%);
     border: 0px;
     color: white;
     position: relative;
@@ -56,7 +59,8 @@
         right:0;
         bottom:0;
         left: 0;
-        background: linear-gradient(175deg, rgba(255,121,218,1) 5%, rgba(151,87,220,1) 66%);
+        background: rgb(235,113,201);
+        background: linear-gradient(175deg, rgba(235,113,201,1) 27%, rgba(172,87,220,0.9164040616246498) 85%);
         opacity: 0;
         z-index: -1;
         box-shadow: 4px 3px 12px 1px rgba(0,0,0,0.49);
@@ -67,6 +71,9 @@
 .fa-heart{
     font-size: 1.5em;
     cursor: pointer;
+    @media screen and (min-width: 1250px){
+        margin-right: 3rem;
+    }
     &:hover:before{
         animation-name: heart-fill;
         animation-duration: 1000ms;
