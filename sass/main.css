@@ -32,7 +32,7 @@ a {
   text-decoration: inherit;
 }
 
-/* Paramètres des boutons */
+/* Bouton "explorer nos restaurants" - page d'accueil */
 .btnexplore {
   background-color: #686868;
   background: linear-gradient(175deg, #ff79da 5%, #9757dc 66%);
@@ -69,6 +69,7 @@ a {
   transition: opacity 350ms;
 }
 
+/* Bouton "Commander" - page de menus */
 .btnorder {
   background-color: #686868;
   background: linear-gradient(175deg, #ff79da 5%, #9757dc 66%);
@@ -107,6 +108,7 @@ a {
   transition: opacity 350ms;
 }
 
+/* Animation "favoris" - acceuil et menus */
 .fa-heart {
   font-size: 1.5em;
   cursor: pointer;
@@ -119,6 +121,24 @@ a {
 }
 
 .fa-heart:hover:before {
+  -webkit-animation-name: heart-fill;
+          animation-name: heart-fill;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 900;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#9356DC));
+  background-image: linear-gradient(white, #9356DC);
+  background-size: 200% 200%;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.fa-heart:active:before {
   -webkit-animation-name: heart-fill;
           animation-name: heart-fill;
   -webkit-animation-duration: 1000ms;

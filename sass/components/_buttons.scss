@@ -1,4 +1,4 @@
-/* Paramètres des boutons */
+/* Bouton "explorer nos restaurants" - page d'accueil */
 
 .btnexplore{
     background-color: rgb(104, 104, 104);
@@ -32,6 +32,8 @@
         transition: opacity 350ms;
     }
 }
+
+/* Bouton "Commander" - page de menus */
 
 .btnorder{
     background-color: rgb(104, 104, 104);
@@ -68,6 +70,8 @@
     }
 }
 
+/* Animation "favoris" - acceuil et menus */
+
 .fa-heart{
     font-size: 1.5em;
     cursor: pointer;
@@ -75,6 +79,19 @@
         margin-right: 3rem;
     }
     &:hover:before{
+        animation-name: heart-fill;
+        animation-duration: 1000ms;
+        animation-fill-mode: forwards;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-background-clip: text; 
+        font-weight: 900;
+        background-image: linear-gradient(white, $color-primary);
+        background-size: 200% 200%;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+    }
+    &:active:before{
         animation-name: heart-fill;
         animation-duration: 1000ms;
         animation-fill-mode: forwards;
