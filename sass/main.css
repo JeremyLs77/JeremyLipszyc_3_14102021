@@ -45,6 +45,7 @@ a {
   margin-bottom: 2rem;
   -webkit-box-shadow: 4px 3px 7px -3px rgba(0, 0, 0, 0.7);
           box-shadow: 4px 3px 7px -3px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 }
 
 .btnexplore:hover::after {
@@ -84,6 +85,7 @@ a {
   margin-bottom: 5rem;
   -webkit-box-shadow: 4px 3px 7px -3px rgba(0, 0, 0, 0.7);
           box-shadow: 4px 3px 7px -3px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
 }
 
 .btnorder:hover::after {
@@ -394,6 +396,7 @@ a {
           animation-delay: 2.5s;
 }
 
+/* Paramètres Entrées/Plats/Desserts */
 .MenuItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,6 +579,10 @@ a {
   padding-top: 1rem;
 }
 
+.Header-home__bolddesc {
+  font-family: "Roboto";
+}
+
 .Header-home__Logo {
   width: 25%;
   margin-bottom: 1rem;
@@ -639,6 +646,7 @@ a {
   text-align: center;
 }
 
+/* Paramètres de la section "Fonctionnement" - page d'accueil */
 .Function__Display {
   margin: 0px 0.7rem 0px 0.7rem;
 }

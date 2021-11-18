@@ -81,6 +81,8 @@
 
 }
 
+/* Paramètres Entrées/Plats/Desserts */
+
 .MenuItem{
 display:flex;
 background-color: white;
@@ -113,36 +115,36 @@ overflow: hidden;
                 padding-right: 2rem;
                 font-weight: 800;
             }
-            &__Checkbutton{
-                @include flex-center;
-                justify-content: center;
-                margin: -1rem -5rem -1rem -1rem;
-                background-color: $color-tertiary;
-                width: 4rem;
-                transition-duration: .6s;
-                }
-                    &:hover &__Checkbutton{
-                        margin-right:-1rem;
+                &__Checkbutton{
+                    @include flex-center;
+                    justify-content: center;
+                    margin: -1rem -5rem -1rem -1rem;
+                    background-color: $color-tertiary;
+                    width: 4rem;
+                    transition-duration: .6s;
                     }
-                        &__Checkwrapper{
-                            @include flex-center;
-                            justify-content: center;
-                            height: 1.6rem;
-                            width: 1.6rem;
-                            background-color: white;
-                            border-radius: 100px;
-                            transform: rotate(180deg);
-                            transition-duration: .7s;
-                            } 
-                                &:hover &__Checkwrapper{
-                                    transform: rotate(0);
-                                }
-                                    &__Check-icon{
-                                        color: $color-tertiary;
-                                    }               
-                                        &__Dish{
-                                            margin:0
-                                        }
+                        &:hover &__Checkbutton{
+                            margin-right:-1rem;
+                        }
+                            &__Checkwrapper{
+                                @include flex-center;
+                                justify-content: center;
+                                height: 1.6rem;
+                                width: 1.6rem;
+                                background-color: white;
+                                border-radius: 100px;
+                                transform: rotate(180deg);
+                                transition-duration: .7s;
+                                } 
+                                    &:hover &__Checkwrapper{
+                                        transform: rotate(0);
+                                    }
+                                        &__Check-icon{
+                                            color: $color-tertiary;
+                                        }               
+                                            &__Dish{
+                                                margin:0
+                                            }
 }
 
 @keyframes fadeIn {

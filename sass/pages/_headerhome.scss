@@ -7,37 +7,40 @@
         text-align: center;
         padding-top: 1rem;
     }
-        &__Logo{
-            width:25%;
-            margin-bottom:1rem;
-            @media screen and (min-width: 1250px){
-                width: 16%;}
-                @media screen and (max-width: 750px){
-                    width: 50%;}
+        &__bolddesc{
+            font-family:"Roboto";
         }
-            &__Heading{
-                @include flex-center;
-                justify-content: center;
-                background-color: #e8e8e8;
-                border-top: #b3b3b3 solid 2px;
+            &__Logo{
+                width:25%;
+                margin-bottom:1rem;
+                @media screen and (min-width: 1250px){
+                    width: 16%;}
+                    @media screen and (max-width: 750px){
+                        width: 50%;}
             }
-                &__location{
-                    margin-left: 1rem;
-                    font-weight: 600;
-                }
-                &__Main{
+                &__Heading{
                     @include flex-center;
-                    flex-direction: column;
                     justify-content: center;
+                    background-color: #e8e8e8;
+                    border-top: #b3b3b3 solid 2px;
                 }
-                    &__bolddesc{
-                        font-weight: 900;
-                        font-size: 1.3em;
-                        text-align:center;
-                        margin: 2rem 4rem 0rem 4rem;
+                    &__location{
+                        margin-left: 1rem;
+                        font-weight: 600;
                     }
-                    &__regdesc{
-                        text-align: center;
-                    }
+                        &__Main{
+                            @include flex-center;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                            &__bolddesc{
+                                font-weight: 900;
+                                font-size: 1.3em;
+                                text-align:center;
+                                margin: 2rem 4rem 0rem 4rem;
+                            }
+                                &__regdesc{
+                                    text-align: center;
+                                }
 }
 
