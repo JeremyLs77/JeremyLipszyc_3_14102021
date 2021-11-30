@@ -5,9 +5,9 @@
 
 @mixin heading-menu{
     margin-left: 1rem;
-    width: 2rem;
     font: 1em "Roboto";
-    border-bottom: lightgreen 2px solid;
+    position: relative;
+    padding-bottom: 0.6rem;
 }
 
 @mixin desktop-only {

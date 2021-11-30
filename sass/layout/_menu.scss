@@ -26,16 +26,23 @@
         }
             &__Heading{
                 margin-left: 1rem;
-                width: 2rem;
                 font: 1em "Roboto";
-                border-bottom: lightgreen 2px solid;
                 }
                 &__Heading-Appet{
                     @include heading-menu;
                     opacity:0;
                     animation: fadeIn 0.5s;
                     animation-fill-mode: forwards;
-                }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 2.65rem;
+                        height: 0.25rem;
+                        background-color: $color-tertiary;
+                        }
+                    }
                     &__Course{
                         @include flex-center;
                         flex-direction: column;
@@ -54,6 +61,15 @@
                                 animation: fadeIn 600ms;
                                 animation-fill-mode: forwards;
                                 animation-delay: 1s;
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 2.65rem;
+                                    height: 0.25rem;
+                                    background-color: $color-tertiary;
+                                    }
                             }
                                 &__Course-Main{
                                     @include flex-center;
@@ -69,6 +85,15 @@
                                         animation: fadeIn 600ms;
                                         animation-fill-mode: forwards;
                                         animation-delay: 2s;
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: 0;
+                                            width: 2.65rem;
+                                            height: 0.25rem;
+                                            background-color: $color-tertiary;
+                                            }
                                     }
                                         &__Course-Dessert{
                                             @include flex-center;

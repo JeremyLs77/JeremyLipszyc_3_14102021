@@ -6,12 +6,12 @@ body {
 /* Importation de la police de caractères */
 @font-face {
   font-family: "Shrikhand";
-  src: url("../static/Shrikhand-Regular.otf");
+  src: url("../fonts/Shrikhand-Regular.otf");
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("../static/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 /* Paramètres des polices de caractères */
@@ -278,21 +278,29 @@ a {
 
 .Menu__Heading {
   margin-left: 1rem;
-  width: 2rem;
   font: 1em "Roboto";
-  border-bottom: lightgreen 2px solid;
 }
 
 .Menu__Heading-Appet {
   margin-left: 1rem;
-  width: 2rem;
   font: 1em "Roboto";
-  border-bottom: lightgreen 2px solid;
+  position: relative;
+  padding-bottom: 0.6rem;
   opacity: 0;
   -webkit-animation: fadeIn 0.5s;
           animation: fadeIn 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.Menu__Heading-Appet::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.65rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
 }
 
 .Menu__Course {
@@ -330,9 +338,9 @@ a {
 
 .Menu__Heading-Main {
   margin-left: 1rem;
-  width: 2rem;
   font: 1em "Roboto";
-  border-bottom: lightgreen 2px solid;
+  position: relative;
+  padding-bottom: 0.6rem;
   opacity: 0;
   -webkit-animation: fadeIn 600ms;
           animation: fadeIn 600ms;
@@ -340,6 +348,16 @@ a {
           animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+
+.Menu__Heading-Main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.65rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
 }
 
 .Menu__Course-Main {
@@ -364,9 +382,9 @@ a {
 
 .Menu__Heading-Dessert {
   margin-left: 1rem;
-  width: 2rem;
   font: 1em "Roboto";
-  border-bottom: lightgreen 2px solid;
+  position: relative;
+  padding-bottom: 0.6rem;
   opacity: 0;
   -webkit-animation: fadeIn 600ms;
           animation: fadeIn 600ms;
@@ -374,6 +392,16 @@ a {
           animation-fill-mode: forwards;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+.Menu__Heading-Dessert::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.65rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
 }
 
 .Menu__Course-Dessert {
@@ -684,6 +712,14 @@ a {
   margin-bottom: 1.8rem;
 }
 
+.Function__Infoframe:hover {
+  background-color: #e2dfec;
+}
+
+.Function__Infoframe:hover .fas {
+  color: #9356DC;
+}
+
 @media screen and (min-width: 1250px) {
   .Function__Infoframe {
     width: 20%;
@@ -694,14 +730,23 @@ a {
 .Function__Number {
   background-color: #9356DC;
   position: absolute;
-  left: -0.4rem;
+  left: -0.6rem;
   color: white;
-  font-size: 0.95em;
+  font-size: 0.8em;
   border-radius: 50%;
   width: 1.3rem;
   height: 1.3rem;
   border: 2px solid #9356DC;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto";
 }
 
 .Function__Text {

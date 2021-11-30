@@ -7,7 +7,7 @@
         }
             &__Title{
                 margin: 2rem 0rem 1rem 6%;
-            }
+                }
                 &__Infoframe{
                 background-color: $color-background;
                 @include flex-center;
@@ -17,24 +17,32 @@
                 padding: 0.7rem 0.7rem 0.7rem 0.7rem;
                 box-shadow: 4px 11px 8px -4px rgba(0,0,0,0.24);
                 margin-bottom: 1.8rem;
+                &:hover {
+                    background-color: #e2dfec;
+                }
+                &:hover .fas{
+                    color: $color-primary;
+                }
                 @media screen and (min-width: 1250px){
                     width: 20%;
                     margin-top: 2rem;
-                }
                     }
+                }
                     &__Number{
                         background-color: $color-primary;
                         position: absolute;
-                        left: -0.4rem;
+                        left: -0.6rem;
                         color: white;
-                        font-size: 0.95em;
+                        font-size: 0.8em;
                         border-radius: 50%;
                         width: 1.3rem;
                         height: 1.3rem;
                         border: 2px solid $color-primary;
-                        text-align: center;
+                        @include flex-center;
+                        justify-content: center;
+                        font-family: "Roboto";
                     }
                         &__Text{
                             font-weight: 800;
                         }
-    }
+}
